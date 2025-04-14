@@ -1,0 +1,7 @@
+1. what is data?
+    type of data?
+2.what is information?
+3.data vs information?
+4.database?
+5.dbms?
+6.dbms vs file system?
