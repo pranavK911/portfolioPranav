@@ -1,0 +1,14 @@
+1.View of data(three schema architecture)
+ i.  Physical layer/internal level
+ ii. logical level/conceptual level
+ iii.view level /ectranal level
+
+2.Instance and Schema?
+3.Data Model?
+4.Database langauge?
+5.How database accessed from application progran?
+6.DBA?
+7.DBMS application architecture
+  a.T1 architecture
+  b.T2 architecture
+  c.T3 architecture
