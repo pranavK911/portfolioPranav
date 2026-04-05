@@ -1,6 +1,0 @@
-1.Basic of er features
-2.Specialisation
-3.Generalisation
-4.Attributes inheritance
-5.Particiption inheritance
-6.Aggregation
