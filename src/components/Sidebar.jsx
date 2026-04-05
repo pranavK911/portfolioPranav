@@ -7,7 +7,7 @@ const Sidebar = () => {
     <aside className="sidebar">
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src="src/assets/socials/my-avatar.png" alt="Pranav Kumar" width="80" />
+          <img src="/socials/my-avatar.png" alt="Pranav Kumar" width="80" />
         </figure>
 
         <div className="info-content">
@@ -73,7 +73,7 @@ const Sidebar = () => {
             >
               {/* <Linkedin size={20} />   */}
               <img
-                src="src/assets/socials/linkedin.svg"
+                src="/socials/linkedin.svg"
                 alt="LinkedIn"
                 width={25}
                 height={25}
@@ -91,7 +91,7 @@ const Sidebar = () => {
             >
               {/* <Github size={20} /> */}
               <img
-                src="src/assets/socials/github.svg"
+                src="/socials/github.svg"
                 alt="GitHub"
                 width={25}
                 height={25}
@@ -109,7 +109,7 @@ const Sidebar = () => {
             >
               {/* <X size={20} /> */}
               <img
-                src="src/assets/socials/x.svg"
+                src="/socials/x.svg"
                 alt="X (Twitter)"
                 width={25}
                 height={25}

@@ -13,7 +13,7 @@ const Portfolio = () => {
       id: 1,
       title: "Smart E-commerce App",
       category: "Mobile Apps",
-      image: "src/assets/projects/appicon.png",
+      image: "/projects/appicon.png",
       link: "#",
     },
 
@@ -21,7 +21,7 @@ const Portfolio = () => {
       id: 2,
       title: "ChatCode",
       category: "Mobile Apps",
-      image: "src/assets/projects/chatcode.png",
+      image: "/projects/chatCode.png",
       link: "#",
     },
 
@@ -29,7 +29,7 @@ const Portfolio = () => {
       id: 3,
       title: "SafeZ",
       category: "Mobile Apps",
-      image: "src/assets/projects/safez.png",
+      image: "/projects/safez.png",
       link: "#",
     },
  
@@ -37,7 +37,7 @@ const Portfolio = () => {
       id: 4,
       title: "Portfolio Website",
       category: "Web Apps",
-      image: "src/assets/projects/portfolio.png",
+      image: "/projects/portfolio.png",
       link: "#",
     },
 
@@ -45,7 +45,7 @@ const Portfolio = () => {
       id: 5,
       title: "Booking App ",
       category: "Web Apps",
-      image: "src/assets/projects/Book.png",
+      image: "/projects/Book.png",
       link: "#",
     },
   ];

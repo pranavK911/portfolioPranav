@@ -128,11 +128,11 @@ const About = () => {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" />
             </div>
             <div className="skill">
-              <img src="src/assets/skills/Firebase.svg" />
+              <img src="/skills/Firebase.svg" />
             </div>
 
             <div className="skill">
-              <img src="src/assets/skills/Postman.svg" alt="Postman" />
+              <img src="/skills/Postman.svg" alt="Postman" />
             </div>
             <div className="skill">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
@@ -151,10 +151,10 @@ const About = () => {
               />
             </div>
             <div className="skill">
-              <img src="src/assets/skills/apple.svg" alt="Apple" />
+              <img src="/skills/apple.svg" alt="Apple" />
             </div>
             <div className="skill">
-              <img src="src/assets/skills/android.svg" alt="Android " />
+              <img src="skills/android.svg" alt="Android " />
             </div>
             <div className="skill">
               <img
