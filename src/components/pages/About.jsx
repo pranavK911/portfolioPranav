@@ -34,17 +34,22 @@ const About = () => {
 
       <section className="about-text">
         <p>
-          I'm <b>Pranav Kumar</b>, a passionate Software Developer based in
-          Patna, Bihar, India. I specialize in building scalable mobile
-          applications, modern web platforms, and{" "}
-          <b>cross-platform solutions</b>.
+          I'm <b>Pranav Kumar</b>, a Software Developer based in Patna, Bihar,
+          India, focused on building scalable, high-performance applications
+          across mobile, web, and <b>native iOS platforms</b>.
         </p>
 
         <p>
-          My work focuses on React, React Native, Node.js, and Firebase. I enjoy
-          developing high-performance apps, solving real-world problems, and
-          creating smooth user experiences across{" "}
-          <b>mobile, web, and cross-platform</b> applications.
+          I specialize in React, React Native, <b>SwiftUI</b>, Node.js, and
+          Firebase, creating seamless{" "}
+          <b>cross-platform and native experiences</b> with a strong emphasis on
+          performance, clean architecture, and user-centric design.
+        </p>
+
+        <p>
+          I enjoy solving real-world problems and building impactful digital
+          products with smooth user experiences across{" "}
+          <b>mobile, web, and iOS</b>.
         </p>
       </section>
 
