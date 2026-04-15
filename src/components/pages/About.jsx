@@ -15,14 +15,14 @@ const About = () => {
         tabIndex={0}
         onClick={() =>
           window.open(
-            "https://drive.google.com/file/d/1BcFM-kKfDwdu7APft9xkp4RPLYH9QeDV/view",
+            "https://drive.google.com/file/d/10O2tKqmHAJ4pOwOvTDRWmDkMBrjjcVBz/view",
             "_blank",
           )
         }
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") {
             window.open(
-              "https://drive.google.com/file/d/1BcFM-kKfDwdu7APft9xkp4RPLYH9QeDV/view",
+              "https://drive.google.com/file/d/10O2tKqmHAJ4pOwOvTDRWmDkMBrjjcVBz/view",
               "_blank",
             );
           }
