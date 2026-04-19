@@ -32,7 +32,7 @@ const Portfolio = () => {
       image: "/projects/safez.png",
       link: "#",
     },
- 
+
     {
       id: 4,
       title: "Portfolio Website",
@@ -47,6 +47,13 @@ const Portfolio = () => {
       category: "Web Apps",
       image: "/projects/Book.png",
       link: "#",
+    },
+    {
+      id: 6,
+      title: "Mumma’s Magic Cakes",
+      category: "Web Apps",
+      image: "/projects/cake.png",
+      link: "https://project-rda-3rtf.vercel.app/",
     },
   ];
 
