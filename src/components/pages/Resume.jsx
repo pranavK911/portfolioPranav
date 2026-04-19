@@ -10,6 +10,63 @@ const Resume = () => {
         <h2 className="article-title">Resume</h2>
       </header>
 
+      {/* Experience */}
+
+      <div className="timeline">
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <Briefcase size={20} />
+          </div>
+          <h3 className="timeline-title">Experience</h3>
+        </div>
+
+        <ol className="timeline-list">
+          {/* <li className="timeline-item">
+            <h4 className="timeline-item-title">
+              React Native Developer (Freelance)
+            </h4>
+            <span>2023 — Present</span>
+            <p className="timeline-text">
+              Developing cross-platform mobile applications using React Native.
+              Worked on multiple apps including service booking platforms and
+              vehicle service applications with Firebase backend.
+            </p>
+          </li> */}
+
+          {/* <li className="timeline-item">
+            <h4 className="timeline-item-title">Full Stack Developer</h4>
+            <span>2022 — 2023</span>
+            <p className="timeline-text">
+              Built web applications using React.js and Node.js. Integrated REST
+              APIs, authentication systems, and Firebase services for scalable
+              backend solutions.
+            </p>
+          </li> */}
+          <li className="timeline-item">
+            <h4 className="timeline-item-title">
+              Mobile App Developer Intern (React Native)
+            </h4>
+            <span>January 2026 — Present</span>
+            <p className="timeline-text">
+              Contributed to building scalable mobile applications for iOS and
+              Android using React Native. Developed reusable components,
+              integrated APIs, enhanced app performance, and assisted in
+              deployment through Xcode, Apple App Store, and Google Play
+              Console.
+            </p>
+          </li>
+          {/* <li className="timeline-item">
+            <h4 className="timeline-item-title">Mobile App Publishing</h4>
+            <span>2023 — Present</span>
+            <p className="timeline-text">
+              Experience publishing and managing applications on Google Play
+              Store and Apple App Store including app optimization, store
+              listing, screenshots, and metadata.
+            </p>
+          </li> */}
+        </ol>
+      </div>
+
       {/* Education */}
 
       <div className="timeline">
@@ -41,51 +98,6 @@ const Resume = () => {
           </li>
         </ol>
       </div>
-
-      {/* Experience */}
-
-      {/* <div className="timeline">
-        <div className="title-wrapper">
-          <div className="icon-box">
-            <Briefcase size={20} />
-          </div>
-          <h3 className="timeline-title">Experience</h3>
-        </div>
-
-        <ol className="timeline-list">
-          <li className="timeline-item">
-            <h4 className="timeline-item-title">
-              React Native Developer (Freelance)
-            </h4>
-            <span>2023 — Present</span>
-            <p className="timeline-text">
-              Developing cross-platform mobile applications using React Native.
-              Worked on multiple apps including service booking platforms and
-              vehicle service applications with Firebase backend.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="timeline-item-title">Full Stack Developer</h4>
-            <span>2022 — 2023</span>
-            <p className="timeline-text">
-              Built web applications using React.js and Node.js. Integrated REST
-              APIs, authentication systems, and Firebase services for scalable
-              backend solutions.
-            </p>
-          </li>
-
-          <li className="timeline-item">
-            <h4 className="timeline-item-title">Mobile App Publishing</h4>
-            <span>2023 — Present</span>
-            <p className="timeline-text">
-              Experience publishing and managing applications on Google Play
-              Store and Apple App Store including app optimization, store
-              listing, screenshots, and metadata.
-            </p>
-          </li>
-        </ol>
-      </div> */}
     </article>
   );
 };
