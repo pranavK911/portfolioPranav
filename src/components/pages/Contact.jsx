@@ -13,7 +13,7 @@ const Contact = () => {
      e.preventDefault();
 
      // Construct mailto URL
-     const mailtoLink = `mailto:pranavkumarcodequery@gmail.com?subject=${encodeURIComponent(
+     const mailtoLink = `mailto:pranavmandal213@gmail.com?subject=${encodeURIComponent(
        subject,
      )}&body=${encodeURIComponent(
        `Name: ${fullname}\nEmail: ${email}\n\nMessage:\n${message}`,
