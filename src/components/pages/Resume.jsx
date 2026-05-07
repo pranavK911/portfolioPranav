@@ -43,9 +43,9 @@ const Resume = () => {
             </p>
           </li> */}
           <li className="timeline-item">
-            <h4 className="timeline-item-title">
-              Mobile App Developer Intern (React Native)
-            </h4>
+          <h4 className="timeline-item-title">
+    Mobile App Developer Intern at CodeQuery
+  </h4>
             <span>January 2026 — April 2026</span>
             <p className="timeline-text">
               Contributed to building scalable mobile applications for iOS and

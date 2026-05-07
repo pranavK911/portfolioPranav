@@ -14,8 +14,13 @@
   align-items: center;
 }
 
+/* Portrait tile: matches icon/card rounding (~16px ≈ sidebar scale) vs circle-in-square mismatch */
 .avatar-box img {
-  border-radius: 50%;
+  display: block;
+  width: 80px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .info-content {
@@ -30,21 +35,25 @@
   margin-bottom: 10px;
 }
 
+/* Pill distinct from icon tiles: gold tint + border, not the same flat panel as .icon-box */
 .title {
-  color: var(--text-main);
-  background: var(--bg-container-light);
+  color: var(--primary-gold);
+  background: hsla(45, 100%, 72%, 0.1);
+  border: 1px solid hsla(45, 100%, 72%, 0.28);
   font-size: 12px;
-  font-weight: 300;
-  padding: 5px 18px;
-  border-radius: 8px;
+  font-weight: 500;
+  padding: 6px 18px;
+  border-radius: 999px;
   display: inline-block;
+  letter-spacing: 0.02em;
 }
 
 .separator {
   width: 100%;
   height: 1px;
   background: var(--border-color);
-  margin: 30px 0;
+  /* Even gap above/below each rule for visual rhythm */
+  margin: 22px 0;
 }
 
 .contacts-list {
@@ -57,12 +66,13 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  min-height: 48px;
 }
 
 .icon-box {
   width: 48px;
   height: 48px;
-  border-radius: 12px;
+  border-radius: 14px;
   background: var(--bg-container-light);
   display: flex;
   justify-content: center;
@@ -78,18 +88,30 @@
   flex-direction: column;
   gap: 2px;
   overflow: hidden;
+  justify-content: center;
+}
+
+.contact-info p {
+  margin: 0;
 }
 
 .contact-title {
   color: var(--text-muted);
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
+  margin: 0;
 }
 
-.contact-link, address {
+.contact-link,
+address {
   color: var(--text-main);
   font-size: 14px;
   font-style: normal;
+  font-weight: 400;
+  line-height: 1.35;
+  margin: 0;
   text-decoration: none;
   white-space: nowrap;
   overflow: hidden;
@@ -107,10 +129,30 @@
 }
 
 .social-link {
-  color: var(--text-muted);
-  transition: color var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  transition: opacity var(--transition), transform var(--transition), filter var(--transition);
 }
 
-.social-link:hover {
-  color: var(--text-main);
+/* Raster SVGs ship black glyphs; remap to readable light tones on dark UI */
+.social-link img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  opacity: 0.88;
+  transition: filter var(--transition), opacity var(--transition), transform var(--transition);
+}
+
+.social-link:hover img {
+  /* Approximates --primary-gold on black-source artwork */
+  filter: brightness(0) saturate(100%) invert(90%) sepia(35%) saturate(520%)
+    hue-rotate(330deg);
+  opacity: 1;
+}
+
+.social-link:active img {
+  transform: scale(0.96);
 }
