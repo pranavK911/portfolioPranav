@@ -25,6 +25,11 @@
   box-sizing: border-box;
 }
 
+/* Avoid accidental horizontal scroll from wide grids or long strings */
+html {
+  overflow-x: clip;
+}
+
 body {
   background-color: var(--bg-dark);
   color: var(--text-muted);

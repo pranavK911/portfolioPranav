@@ -65,3 +65,23 @@
   line-height: 1.6;
   margin-top: 10px;
 }
+
+/* Narrow viewports: keep timeline readable without horizontal nudge */
+@media (max-width: 480px) {
+  .timeline-list {
+    margin-left: 12px;
+    padding-left: 22px;
+  }
+
+  .timeline-item::before {
+    left: -29px;
+  }
+
+  .timeline-title {
+    font-size: clamp(1.125rem, 4.5vw, 1.5rem);
+  }
+
+  .timeline-item-title {
+    font-size: clamp(0.9375rem, 3vw, 1rem);
+  }
+}

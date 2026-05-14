@@ -156,3 +156,45 @@ address {
 .social-link:active img {
   transform: scale(0.96);
 }
+
+/* When the sidebar stacks above content, use a compact horizontal header */
+@media (max-width: 1024px) {
+  .sidebar-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(12px, 3vw, 20px);
+  }
+
+  .info-content {
+    text-align: left;
+  }
+
+  .contacts-list {
+    gap: clamp(18px, 4vw, 30px);
+  }
+
+  .contact-link,
+  address {
+    /* Emails/URLs can be long; prefer wrapping over horizontal page scroll */
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 380px) {
+  .name {
+    font-size: clamp(1.25rem, 6vw, 1.625rem);
+  }
+
+  .sidebar-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-content {
+    text-align: center;
+  }
+}

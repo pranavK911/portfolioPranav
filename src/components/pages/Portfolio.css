@@ -2,8 +2,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: clamp(12px, 3vw, 20px);
+  margin-bottom: clamp(18px, 4vw, 30px);
 }
 
 .filter-list button {
@@ -115,5 +116,26 @@
 @media (max-width: 768px) {
   .project-list {
     grid-template-columns: 1fr;
+    gap: clamp(18px, 4vw, 30px);
+  }
+}
+
+/* Narrow phones: swipe tabs instead of overlapping labels */
+@media (max-width: 420px) {
+  .filter-list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+
+  .filter-list::-webkit-scrollbar {
+    height: 0;
+  }
+
+  .filter-item {
+    flex: 0 0 auto;
   }
 }

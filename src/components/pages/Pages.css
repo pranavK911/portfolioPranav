@@ -5,11 +5,12 @@
 
 .article-title {
   color: var(--text-main);
-  font-size: 32px;
+  font-size: clamp(1.45rem, 4vw + 0.5rem, 2rem);
   font-weight: 600;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: clamp(12px, 3vw, 20px);
+  padding-bottom: clamp(12px, 3vw, 20px);
   position: relative;
+  line-height: 1.2;
 }
 
 /* Magic underline for titles */
@@ -26,8 +27,8 @@
 
 .about-text {
   color: var(--text-muted);
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: clamp(0.875rem, 1vw + 0.8rem, 0.9375rem);
+  line-height: 1.65;
   margin-bottom: 15px;
 }
 
@@ -35,10 +36,11 @@
   display: inline-flex;
   align-items: center;
   gap: 14px;
+  max-width: 100%;
   background: #494b4e;
   color: #f8fafc;
   border-radius: 12px;
-  padding: 14px 18px;
+  padding: clamp(12px, 2.5vw, 14px) clamp(14px, 3vw, 18px);
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
@@ -65,9 +67,17 @@
 
 .service-title {
   color: var(--text-main);
-  font-size: 24px;
+  font-size: clamp(1.125rem, 2.5vw + 0.5rem, 1.5rem);
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: clamp(16px, 3vw, 25px);
+}
+
+/* Matches `.service-title`; used by the Skills block on About */
+.skills-title {
+  color: var(--text-main);
+  font-size: clamp(1.125rem, 2.5vw + 0.5rem, 1.5rem);
+  font-weight: 600;
+  margin-bottom: clamp(12px, 2.5vw, 18px);
 }
 
 .service-list {
@@ -79,12 +89,13 @@
 .service-item {
   background: var(--bg-container-light);
   border-radius: 14px;
-  padding: 30px;
+  padding: clamp(18px, 4vw, 30px);
   display: flex;
   align-items: flex-start;
-  gap: 18px;
+  gap: clamp(12px, 2.5vw, 18px);
   box-shadow: var(--box-shadow);
   border: 1px solid var(--border-color);
+  min-width: 0;
 }
 
 .service-icon-box {
@@ -101,12 +112,12 @@
 
 .service-item-text {
   color: var(--text-muted);
-  font-size: 15px;
+  font-size: clamp(0.875rem, 1vw + 0.75rem, 0.9375rem);
   line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Mid-width tablets: single column reads better than cramped two-up */
+@media (max-width: 900px) {
   .service-list {
     grid-template-columns: 1fr;
   }
@@ -130,13 +141,13 @@
 /* Skill row */
 .skills-track {
   display: flex;
-  gap: 40px;
-  padding: 0 20px;
+  gap: clamp(20px, 6vw, 40px);
+  padding: 0 clamp(10px, 3vw, 20px);
 }
 
 /* Each icon */
 .skill {
-  min-width: 150px;
+  min-width: clamp(100px, 28vw, 150px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,8 +172,8 @@
 }
 
 .skill img {
-  width: 110px;
-  height: 110px;
+  width: clamp(72px, 22vw, 110px);
+  height: clamp(72px, 22vw, 110px);
   object-fit: contain;
   cursor: pointer;
 }

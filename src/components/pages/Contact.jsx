@@ -39,7 +39,7 @@ const Contact = () => {
           <iframe
             src="https://www.google.com/maps?q=Patna,Bihar&output=embed"
             width="100%"
-            height="350"
+            height="300"
             loading="lazy"
             title="Map of Patna"
             className="google-map"
