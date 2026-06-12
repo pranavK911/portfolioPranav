@@ -15,14 +15,14 @@ const About = () => {
         tabIndex={0}
         onClick={() =>
           window.open(
-            "https://drive.google.com/file/d/1R80R9ocdONqSLDY6bkCrlMd7_TTPoU_j/view",
+            "https://drive.google.com/file/d/1DBEDgyplyHp1_hDpCscghZ5yhg0OBFtM/view",
             "_blank",
           )
         }
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") {
             window.open(
-              "https://drive.google.com/file/d/1R80R9ocdONqSLDY6bkCrlMd7_TTPoU_j/view",
+              "https://drive.google.com/file/d/1DBEDgyplyHp1_hDpCscghZ5yhg0OBFtM/view",
               "_blank",
             );
           }
@@ -124,6 +124,8 @@ const About = () => {
             <div className="skill">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
             </div>
+            <div className="skill">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo" />            </div>
 
             <div className="skill">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactnative/reactnative-original.svg" />
