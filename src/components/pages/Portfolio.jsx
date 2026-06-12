@@ -14,7 +14,7 @@ const Portfolio = () => {
       title: "Smart E-commerce App",
       category: "Mobile Apps",
       image: "/projects/appicon.png",
-      link: "#",
+      link: "/apk/se.apk",
     },
 
     {
@@ -22,7 +22,7 @@ const Portfolio = () => {
       title: "ChatCode",
       category: "Mobile Apps",
       image: "/projects/chatCode.png",
-      link: "#",
+      link: "/apk/chatCode.apk",
     },
 
     {
@@ -63,6 +63,25 @@ const Portfolio = () => {
       : projects.filter((project) =>
          project.category === activeTab);
 
+  const getApkFileName = (title) => `${title.trim()}.apk`;
+
+  const handleProjectClick = (e, project) => {
+    if (!project.link.endsWith(".apk")) return;
+
+    e.preventDefault();
+    const apkName = getApkFileName(project.title);
+    const confirmed = window.confirm(
+      `Do you want to download ${project.title} (${apkName})?`
+    );
+
+    if (confirmed) {
+      const link = document.createElement("a");
+      link.href = project.link;
+      link.download = apkName;
+      link.click();
+    }
+  };
+
   return (
     <article className="article portfolio fade-in">
       <header>
@@ -89,7 +108,13 @@ const Portfolio = () => {
       <ul className="project-list">
         {filteredProjects.map((project) => (
           <li className="project-item" key={project.id}>
-            <a href={project.link} target="#">
+            <a
+              href={project.link}
+              onClick={(e) => handleProjectClick(e, project)}
+              {...(project.link.startsWith("http")
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
+            >
               <figure className="project-img-box">
                 <img src={project.image} alt={project.title} loading="lazy" />
 
