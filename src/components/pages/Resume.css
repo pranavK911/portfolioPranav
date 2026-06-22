@@ -65,6 +65,28 @@
   line-height: 1.6;
   margin-top: 10px;
 }
+.certificate-btn {
+  margin-top: 12px;
+  padding: 8px 16px;
+  border: 1px solid var(--primary-gold);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--primary-gold);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.certificate-btn:hover {
+  background: var(--primary-gold);
+  color: var(--bg-container);
+  transform: translateY(-2px);
+}
+
+.certificate-btn:active {
+  transform: translateY(0);
+}
 
 /* Narrow viewports: keep timeline readable without horizontal nudge */
 @media (max-width: 480px) {

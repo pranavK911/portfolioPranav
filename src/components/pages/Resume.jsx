@@ -2,7 +2,8 @@ import React from "react";
 import { BookOpen, Briefcase } from "lucide-react";
 import "./Pages.css";
 import "./Resume.css";
-
+import zeenoCertificate from "../../assets/certificate/zeeno.png";
+import codeQueryCertificate from "../../assets/certificate/cq0.png";
 const Resume = () => {
   return (
     <article className="article resume fade-in">
@@ -21,31 +22,10 @@ const Resume = () => {
         </div>
 
         <ol className="timeline-list">
-          {/* <li className="timeline-item">
-            <h4 className="timeline-item-title">
-              React Native Developer (Freelance)
-            </h4>
-            <span>2023 — Present</span>
-            <p className="timeline-text">
-              Developing cross-platform mobile applications using React Native.
-              Worked on multiple apps including service booking platforms and
-              vehicle service applications with Firebase backend.
-            </p>
-          </li> */}
-
-          {/* <li className="timeline-item">
-            <h4 className="timeline-item-title">Full Stack Developer</h4>
-            <span>2022 — 2023</span>
-            <p className="timeline-text">
-              Built web applications using React.js and Node.js. Integrated REST
-              APIs, authentication systems, and Firebase services for scalable
-              backend solutions.
-            </p>
-          </li> */}
           <li className="timeline-item">
-          <h4 className="timeline-item-title">
-    Mobile App Developer Intern at CodeQuery
-  </h4>
+            <h4 className="timeline-item-title">
+              Mobile App Developer Intern at CodeQuery
+            </h4>
             <span>January 2026 — April 2026</span>
             <p className="timeline-text">
               Contributed to building scalable mobile applications for iOS and
@@ -54,16 +34,34 @@ const Resume = () => {
               deployment through Xcode, Apple App Store, and Google Play
               Console.
             </p>
+            <button
+              className="certificate-btn"
+              onClick={() => window.open(codeQueryCertificate, "_blank")}
+            >
+              View Certificate
+            </button>
           </li>
-          {/* <li className="timeline-item">
-            <h4 className="timeline-item-title">Mobile App Publishing</h4>
-            <span>2023 — Present</span>
+          <li className="timeline-item">
+            <h4
+              className="timeline-item-title"
+            >
+              Frontend Developer Intern at Zeeno Tech
+            </h4>
+            <span>September 2025 — December 2025</span>
             <p className="timeline-text">
-              Experience publishing and managing applications on Google Play
-              Store and Apple App Store including app optimization, store
-              listing, screenshots, and metadata.
+              Built and maintained responsive web applications using React.js,
+              JavaScript, HTML, and CSS. Implemented reusable components,
+              integrated APIs, translated UI/UX designs into interactive
+              interfaces, and collaborated with the team to deliver scalable and
+              optimized frontend solutions.
             </p>
-          </li> */}
+            <button
+              className="certificate-btn"
+              onClick={() => window.open(zeenoCertificate, "_blank")}
+            >
+              View Certificate
+            </button>
+          </li>
         </ol>
       </div>
 
