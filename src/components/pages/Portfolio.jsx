@@ -25,13 +25,13 @@ const Portfolio = () => {
       link: "/apk/chatCode.apk",
     },
 
-    {
-      id: 3,
-      title: "SafeZ",
-      category: "Mobile Apps",
-      image: "/projects/safez.png",
-      link: "#",
-    },
+    // {
+    //   id: 3,
+    //   title: "SafeZ",
+    //   category: "Mobile Apps",
+    //   image: "/projects/safez.png",
+    //   link: "#",
+    // },
 
     {
       id: 4,

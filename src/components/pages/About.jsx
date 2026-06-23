@@ -1,7 +1,7 @@
 import React from "react";
 import { Layers, Globe, Smartphone, Monitor, Download } from "lucide-react";
 import "./Pages.css";
-
+import resumePdf from '../../resume/pranavkumar.pdf'
 const About = () => {
   return (
     <article className="article about fade-in">
@@ -13,18 +13,10 @@ const About = () => {
         className="download-resume-button"
         role="button"
         tabIndex={0}
-        onClick={() =>
-          window.open(
-            "https://drive.google.com/file/d/1DBEDgyplyHp1_hDpCscghZ5yhg0OBFtM/view",
-            "_blank",
-          )
-        }
+        onClick={() => window.open(resumePdf, "_blank")}
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") {
-            window.open(
-              "https://drive.google.com/file/d/1DBEDgyplyHp1_hDpCscghZ5yhg0OBFtM/view",
-              "_blank",
-            );
+            window.open(resumePdf, "_blank");
           }
         }}
       >
@@ -125,7 +117,12 @@ const About = () => {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
             </div>
             <div className="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo" />            </div>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                height="40"
+                alt="typescript logo"
+              />{" "}
+            </div>
 
             <div className="skill">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactnative/reactnative-original.svg" />
